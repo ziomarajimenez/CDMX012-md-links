@@ -21,7 +21,3 @@ const resolvePath = (userPath) => {
 };
 
 module.exports = verifyIfPathExists; 
-
-// verifyIfPathExists("../holamundo.js");
-// verifyIfPathExists("C:/Users/kevin/Documents/GitHub");
-// verifyIfPathExists("C:\Users\kevin\Documents\GitHub");
