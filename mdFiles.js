@@ -8,7 +8,7 @@ const getMdFiles = (Userpath) => {
   let filePath;
 
   if(isDir){
-    const files = fs.readdirSync(Userpath); //Array with all the files
+    const files = fs.readdirSync(Userpath); 
     for (const file of files){
       filePath = path.join(Userpath, file)
       let pathExt = path.extname(file);
@@ -23,9 +23,7 @@ const getMdFiles = (Userpath) => {
     filePath = path.join(Userpath)
     if (pathExt === '.md'){
       mdFiles.push(filePath);
-    } else {
-      console.log("The path doesn't contain any .md files to read")
-    }
+    } 
   }
   return(mdFiles);
 }; 

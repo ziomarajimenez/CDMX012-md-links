@@ -1,7 +1,6 @@
 const fs = require("fs");
 
 const getLinks = (paths) => {
-    
     let regex = /\[([^\[]+)\](\(.*\))/gm;
     let singleRegex = /\[([^\[]+)\]\((.*)\)/;
     const result = [];
@@ -11,10 +10,10 @@ const getLinks = (paths) => {
         if(links){
             for (let link of links) {
                 let text = singleRegex.exec(link)
-                result.push({
-                    "path":path,
-                    "link":text[2],
-                    "text": text[1]
+                result.push({   
+                    "href":text[2],
+                    "text": text[1],
+                    "file":path,
                 });
             }
         }
@@ -22,4 +21,5 @@ const getLinks = (paths) => {
     return result;
 }
 
+// console.log(getLinks('./docs/fileOne.md'))
 module.exports = getLinks;
