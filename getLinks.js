@@ -21,5 +21,5 @@ const getLinks = (paths) => {
     return result;
 }
 
-// console.log(getLinks('./docs/fileOne.md'))
+
 module.exports = getLinks;

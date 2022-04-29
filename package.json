@@ -1,17 +1,35 @@
 {
-  "name": "md-links",
-  "version": "0.1.0",
+  "name": "md-links-zj",
+  "description": "Library and command line tool (CLI) to find and validate links in markdown files",
+  "version": "1.0.1",
+  "keywords": [
+    "markdown",
+    "link validation",
+    "cli"
+  ],
+  "homepage": "https://github.com/ziomarajimenez/CDMX012-md-links",
+  "bugs": {
+    "url": "https://github.com/ziomarajimenez/CDMX012-md-links/issues"
+  },
+  "author": "Ziomara Jiménez",
+  "license": "ISC",
   "engines": {
     "node": ">=14.x"
   },
   "scripts": {
     "test": "jest ---coverage",
-    "start": "nodemon md-links.js"
+    "start": "nodemon index.js"
   },
   "mock-fs": "^5.1.2",
+  "main": "bin/index.js",
+  "bin": {
+    "mdLinks": "./bin/index.js"
+  },
   "dependencies": {
     "axios": "^0.26.1",
-    "chalk": "^5.0.1"
+    "boxen": "^6.2.1",
+    "chalk": "^4.1.2",
+    "yargs": "^17.4.1"
   },
   "devDependencies": {
     "jest": "^28.0.0",
