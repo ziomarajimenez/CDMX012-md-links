@@ -58,34 +58,54 @@ Here are the available options mentioned before:
 
 _Providing a relative path_
 
-Input: `mdLinks './docs/fileOne.md`
+Input:
 
-Output: ![img1](https://github.com/ziomarajimenez/CDMX012-md-links/blob/main/1.PNG?raw=true)
+`mdLinks './docs/fileOne.md`
+
+Output:
+
+![img1](https://github.com/ziomarajimenez/CDMX012-md-links/blob/main/img/1.PNG)
 
 _Providing an absolute path:_
 
-Input: `mdLinks 'C:\Users\kevin\Desktop\laboratoria\CDMX012-md-links\docs\fileTwo.md'`
+Input:
 
-Output: IMG2
+`mdLinks 'C:\Users\kevin\Desktop\laboratoria\CDMX012-md-links\docs\fileTwo.md'`
+
+Output:
+
+![img1](https://github.com/ziomarajimenez/CDMX012-md-links/blob/main/img/2.PNG)
 
 _Using --validate_
 
-Input: `mdLinks './docs/fileOne.md' --validate`
+Input:
 
-Output: IMG3
+`mdLinks './docs/fileOne.md' --validate`
+
+Output:
+
+![img1](https://github.com/ziomarajimenez/CDMX012-md-links/blob/main/img/3.PNG)
 
 _Using --stats_
 
-Input: `mdLinks './docs/fileOne.md' --stats`
+Input:
 
-Output: IMG4
+`mdLinks './docs/fileOne.md' --stats`
+
+Output:
+
+![img1](https://github.com/ziomarajimenez/CDMX012-md-links/blob/main/img/4.PNG)
 
 _Using --validate --stats_
 
-Input: `mdLinks './docs/fileOne.md' --validate --stats`
+Input:
 
-Output: IMG5
+`mdLinks './docs/fileOne.md' --validate --stats`
+
+Output:
+
+![img1](https://github.com/ziomarajimenez/CDMX012-md-links/blob/main/img/5.PNG)
 
 ## 5. Flowchart
 
-IMG
+![img1](https://github.com/ziomarajimenez/CDMX012-md-links/blob/main/img/flowchart.jpg)
