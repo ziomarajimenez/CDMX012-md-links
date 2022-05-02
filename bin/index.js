@@ -90,4 +90,4 @@ const usage = ("\nUsage: mdLinks <path> --validate --stats \n (Validate and stat
     
     main(argv);
     
-    
+module.exports = main;
